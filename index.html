@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zero buzz brew</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="icon" type="image/x-icon" href="">
+    <link rel="icon" type="image/x-icon" href="img/logo.PNG">
 </head>
 
 <body>
@@ -22,11 +22,11 @@
                 <li><a href="#">Om os</a></li>
             </ul>
 
-            <ul>
-                <li><a href="#">Logo</a></li>
-                <li class="hideOnMobile"><a href="#">Sortiment</a></li>
-                <li class="hideOnMobile"><a href="#">Events</a></li>
-                <li class="hideOnMobile"><a href="#">Information</a></li>
+            <ul class="hovedmenu">
+                <li><a href="index.html"> <img src="img/logo.PNG" alt="Logo" style="max-width:130px;"></a></li>
+                <li class="hideOnMobile"><a href="sortiment.html">Sortiment</a></li>
+                <li class="hideOnMobile"><a href="events.html">Events</a></li>
+                <li class="hideOnMobile"><a href="information.html">Information</a></li>
                 <li class="hideOnMobile"><a href="#">Om os</a></li>
                 <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#black"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
             </ul>
@@ -44,12 +44,59 @@
         </script>
     </header>
    
-    <main>
-
+    <main class="main-content">
+        <section class="sortiment">
+            <img class="forside-foto" src="img/to-personer.webp" alt="To personer der drikker øl ved solnedgang">
+            <img class="pilsner" src="img/oel-pilsner.webp" alt="Øl pilsner alkoholfri">
+            <button class="button forside-button"><a href="sortiment.html"></a>Se sortiment</button>
+        </section>
+        <section class="events">
+            <h1 class="headline">Events</h1>
+            <article class="links">
+                <a href="events.html"><img src="img/oel-smagning.webp" alt="Ølsmagning"></a> 
+                <a href="events.html"><img src="img/bryggeri.webp" alt="Rundvisning"></a> 
+            </article>
+        </section>
+        <section>
+            <h1 class="headline">Forhandlere</h1>
+            <article class="forhandlere">
+                <img src="img/supermarked.webp" alt="Supermarked logo">
+                <img src="img/bistro.webp" alt="Sunset Bistro logo">
+                <img src="img/store.webp" alt="Bliss store logo">
+                <img src="img/cafe.webp" alt="The garden cafe logo">
+            </article>
+        </section>
     </main>
-
     <footer>
-        
+        <section class="footer">
+            <article>
+                <a class="logo" href="index.html"> <img src="img/logo.PNG" alt="Logo" style="width: 70%;"></a>
+            </article>
+            <article>
+                <h3 class="underoverskrift">Find os</h3>
+                <p>Fabriksvej 28</p>
+                <p>8000 Århus C</p>
+                <article class="sociale-medier-links">
+                    <a href="#"><img class="sociale-medier" src="img/facebook.webp" alt="Facebook"></a> 
+                    <a href="#"><img class="sociale-medier" src="img/instagram.webp" alt="Instagram"></a>
+                    <a href="#"><img class="sociale-medier "src="img/x.webp" alt="X"></a>
+                </article>
+            </article> 
+            <article> 
+                <h3 class="underoverskrift">Hurtige links</h3>
+                <ul>
+                    <li><a href="sortiment.html">Sortiment</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="information.html">Information</a></li>
+                    <li><a href="#">Om os</a></li>
+                </ul>
+            </article>
+            <article>
+                <h3 class="underoverskrift">Kontakt</h3>
+                <a href="mailto:zerobuzzbrew@gmail.com">zerobuzzbrew@gmail.com</a>
+                <a href="tel:+4512345678">+45 12 34 56 78</a>
+            </article>
+        </section>
     </footer>
 </body>
 </html>

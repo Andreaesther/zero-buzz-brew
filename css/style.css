@@ -4,9 +4,21 @@
     padding: 0;
 }
 
+/* Definerer mine skrifttyper */
+@font-face {
+    font-family: 'Patua One';
+    src: url(../fonts/Patua_One.zip);
+    font-family: 'Orienta';
+    src: url(../fonts/Orienta.zip);
+}
+
+/* Indsætter skrifttyper */
 body{
     min-height: 100vh;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Orienta';
+}
+h1{
+    font-family: 'Patua One';
 }
 
 /* Navigationsbar */
@@ -19,7 +31,7 @@ nav ul{
     width: 100%;
     list-style: none;
     display: flex;
-    justify-content: flex-end; /*ret til center*/
+    justify-content: flex-end;
     align-items: center;
 }
 
@@ -37,10 +49,10 @@ nav a{
 }
 
 nav a:hover{
-    background-color: #f0f0f0;
+    color: #6c6c6c;
 }
 
-nav li:first-child{  /*får logo til at ligge til højre*/
+nav li:first-child{  /*får logo til at ligge til venstre*/
     margin-right: auto;
 }
 
@@ -69,7 +81,7 @@ nav li:first-child{  /*får logo til at ligge til højre*/
     display: none;
 }
 
-
+/* Media Query */
 @media(max-width:800px){
     .hideOnMobile{
         display: none;
@@ -83,6 +95,164 @@ nav li:first-child{  /*får logo til at ligge til højre*/
 @media(max-width:400px){
     .hideOnMobile{
         width: 100%;
-
     }
 }
+
+/* Header */
+.hovedmenu{
+    height: 7rem;
+    background-color: #EFE7D8;
+}
+
+/* Footer */
+footer{
+    background-color: #EFE7D8;
+}
+
+.footer{
+    display: flex;
+    justify-content: space-around;
+}
+
+footer article { /* Mellemrum mellem articles og lige meget plads */
+    flex: 1; 
+    margin: 50px 10px; 
+}
+
+.logo{
+    margin-top: -68px;
+}
+
+.underoverskrift {
+    margin-bottom: 20px;
+}
+
+footer p, footer a { /* fjerner tekst decorations og laver linjeskift*/
+    display: block;
+    margin: 10px 5px;
+    color: black;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #6c6c6c;
+}
+
+.sociale-medier{
+    width: 30px;
+    margin: 5px;
+    display: flex;
+    flex-direction: row;
+}
+
+.sociale-medier-links{
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+}
+
+/* Styler knap */
+.button{
+    background-color: #963632;
+    color: #ffffff;
+    cursor: pointer;
+    border: none;
+    border-radius: 20px;
+    max-width: 9rem;
+    max-height: 2.5rem;
+    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 1rem 2rem;
+    text-align: center;
+}
+.button:hover{
+    background-color: #9F4A47;
+}
+
+
+
+
+
+
+
+
+
+
+/* FORSIDE */
+/* Bruger flexbox til at lave layout på forsiden */
+.main-content{
+    display: flex;
+    flex-direction: column; 
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.sortiment{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.forside-foto{
+    border-radius: 50%;
+    padding: 2rem;
+    width: 60%;
+    height: 80%;
+    margin-right: 20px;
+    z-index: 1;
+}
+
+.pilsner{
+    width: 15%;
+    height: auto;
+    margin-left: -190px; 
+    z-index: 2;
+}
+
+.forside-button{
+    position: absolute;
+    bottom: 140px;
+    left: 50%;
+    transform: translateX(-80%);
+    z-index: 3;
+}
+
+/* Events section */
+.links{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.headline {
+    margin: 40px;
+    text-align: center;
+}
+
+.events a {
+    width: 40%;
+}
+
+.events img {
+    width: 100%;
+}
+
+/* Forhandlere section */
+.forhandlere{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.forhandlere img{
+    width: 20%;
+}
+
+
+/* SORTIMENT  */
+
+
+/* EVENTS  */
+
+
+/* INFORMATION */
