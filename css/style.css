@@ -17,9 +17,10 @@ body{
     min-height: 100vh;
     font-family: 'Orienta';
     line-height: 1.8;
+    background-color: #EFE7D8;
 }
 h1{
-    font-family: 'Patua One';
+    font-family: 'Impact';
 }
 
 /* Navigationsbar */
@@ -107,7 +108,7 @@ nav li:first-child{  /*får logo til at ligge til venstre*/
 
 /* Footer */
 footer{
-    background-color: #F0E7D9;
+    background-color: #7F90EA;
 }
 
 .footer{
@@ -217,6 +218,29 @@ footer a:hover {
     z-index: 3;
 }
 
+/* Produkter section */
+.produkter{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-left: 170px;
+}
+
+.produkter img{
+    max-width: 30%;
+    transition: transform 0.3s ease;
+}
+
+.produkter img:hover {
+    animation: bounce 0.5s infinite alternate;
+}
+
+@keyframes bounce {
+    100% {
+        transform: translateY(-10px);
+    }
+}
+
 /* Events section */
 .links{
     display: flex;
@@ -235,6 +259,17 @@ footer a:hover {
 
 .events img {
     width: 100%;
+}
+
+.links a {
+    display: inline-block;
+    overflow: hidden;
+}
+.links img {
+    transition: transform 0.5s ease;
+}
+.links a:hover img {
+    transform: scale(1.1);
 }
 
 /* Forhandlere section */
