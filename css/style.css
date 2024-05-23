@@ -16,6 +16,7 @@
 body{
     min-height: 100vh;
     font-family: 'Orienta';
+    line-height: 1.8;
 }
 h1{
     font-family: 'Patua One';
@@ -65,7 +66,7 @@ nav li:first-child{  /*får logo til at ligge til venstre*/
     z-index: 999;
     background-color: white;
     box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
-    display: flex;
+    display: none;
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
@@ -101,12 +102,12 @@ nav li:first-child{  /*får logo til at ligge til venstre*/
 /* Header */
 .hovedmenu{
     height: 7rem;
-    background-color: #EFE7D8;
+    background-color: #F0E7D9;
 }
 
 /* Footer */
 footer{
-    background-color: #EFE7D8;
+    background-color: #F0E7D9;
 }
 
 .footer{
@@ -196,8 +197,7 @@ footer a:hover {
 .forside-foto{
     border-radius: 50%;
     padding: 2rem;
-    width: 60%;
-    height: 80%;
+    width: 70%;
     margin-right: 20px;
     z-index: 1;
 }
@@ -205,7 +205,7 @@ footer a:hover {
 .pilsner{
     width: 15%;
     height: auto;
-    margin-left: -190px; 
+    margin-left: -210px; 
     z-index: 2;
 }
 
@@ -253,6 +253,60 @@ footer a:hover {
 
 
 /* EVENTS  */
+.events{
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+.event-img{
+    max-width: 500px;
+    border-radius: 15px;
+    margin-bottom: 15px;
+    margin-left: 200px;
+}
+
+h2{
+    margin: 0 0 15px 380px;
+}
+
+.event-info{
+    background-color: #38398D;
+    color: #ffffff;
+    border-radius: 3%;
+    padding: 10px;
+    list-style-type: none;
+    width:fit-content;
+    margin: -5rem 0 6rem 30rem;
+}
+
+.tekst{
+    max-width: 40%;
+    margin-left: 50rem;
+    margin-top: -20rem;
+}
+
+.bestil-plads{
+    margin: 3rem 0 0 80rem;
+    
+}
 
 
 /* INFORMATION */
+.box{
+    background-color: #EFE7D8;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 40%;
+    margin: 50px;
+}
+
+.venstre{
+    margin-left: 200px;
+    color: #963632;
+}
+
+.højre{
+    margin-left: 800px;
+    color: #38398D;
+}
