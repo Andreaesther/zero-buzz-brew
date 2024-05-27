@@ -46,26 +46,44 @@
         <main>
             <section>
                 <h1 class="headline">Sortiment</h1>
-                <p>Velkommen til vores udvalg af alkoholfrie øl. Vi tilbyder tre unikke varianter. <br> Find din favorit og nyd smagen uden alkohol.</p>
+                <p class="center">Velkommen til vores udvalg af alkoholfrie øl. Vi tilbyder tre unikke varianter. <br> Find din favorit og nyd smagen uden alkohol.</p>
             </section>
             <section>
-                <article>
-                    <img src="" alt="Pilsner alkoholfri øl">
-                    <p>En klassisk og tidløs pilsner. Smagen er som du kender den og passer til enhver lejlighed hvor du ønsker en favorit uden alkohol.</p>
+                <article class="group">
+                    <img class="oel" src="img/oel-pilsner.webp" alt="Pilsner alkoholfri øl">
+                    <p class="oel-tekst">En klassisk og tidløs pilsner. Smagen er som du kender den og passer til enhver lejlighed hvor du ønsker en favorit uden alkohol.</p>
                 </article>
-                <article>
-                    <img src="" alt="Lemon lime alkoholfri øl">
-                    <p>En mere frisk og livlig øl med lemon lime - også alkoholfri. Den er perfekt til en sommerdag med den klassiske ølsmag kombineret med forfriskende citrus.</p>
+                <article class="group">
+                    <img class="oel" src="img/oel-lemon.webp" alt="Lemon lime alkoholfri øl">
+                    <p class="oel-tekst">En mere frisk og livlig øl med lemon lime - også alkoholfri. Den er perfekt til en sommerdag med den klassiske ølsmag kombineret med forfriskende citrus.</p>
                 </article>
-                <article>
-                    <img src="" alt="Mango fresh alkoholfri øl">
-                    <p>Mango Fresh er en eksotisk øl med noter af  moden mango. God til dig der ønsker en sød og frugtagtig øl. Prøv den og tilføj en smag af tropisk paradis til din dag.</p>
+                <article class="group"> 
+                    <img class="oel" src="img/oel-mango.webp" alt="Mango fresh alkoholfri øl">
+                    <p class="oel-tekst">Mango Fresh er en eksotisk øl med noter af  moden mango. God til dig der ønsker en sød og frugtagtig øl. Prøv den og tilføj en smag af tropisk paradis til din dag.</p>
                 </article>
             </section>
             <section>
                 <h1 class="headline">Det siger andre</h1>
-                <img src="" alt="Pilsner alkoholfri øl">
-                <p>“Den har en frisk, humlet smag som en øl skal have.”</p>
+                <article class="slider-container">
+                    <button class="slider-button left" onclick="scrollLeft()">&#9664;</button>
+                    <article class="slider">
+                        <aside class="slider-item">
+                            <img src="img/oel-pilsner.webp" alt="Pilsner alkoholfri øl">
+                            <p>"Et fremragende valg for ølelskere, der søger en alkoholfri mulighed med al smagen."
+                            </p> 
+                        </aside>
+                        <aside class="slider-item">
+                            <img src="img/oel-lemon.webp" alt="Pilsner alkoholfri øl">
+                            <p>"En herlig kombination af øl og citrus smage, der giver et forfriskende twist."</p> 
+                        </aside>
+                        <aside class="slider-item">
+                            <img src="img/oel-mango.webp" alt="Pilsner alkoholfri øl">
+                            <p>"En tropisk fornøjelse, der blander mangoens sødme med en glat ølbase."</p> 
+                        </aside>
+                    </article>
+                    <button class="slider-button right" onclick="scrollRight()">&#9654;</button>
+                </article>
+                <script src="js/script.js"></script>
             </section>
             <section>
                 <h1 class="headline">Forhandlere</h1>
