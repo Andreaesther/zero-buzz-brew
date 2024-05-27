@@ -113,6 +113,7 @@ footer{
 .footer{
     display: flex;
     justify-content: space-around;
+    margin-left: -25rem;
 }
 
 footer article { /* Mellemrum mellem articles og lige meget plads */
@@ -121,7 +122,7 @@ footer article { /* Mellemrum mellem articles og lige meget plads */
 }
 
 .logo{
-    margin-top: -55px;
+    margin-top: -50px;
 }
 
 .underoverskrift {
@@ -150,6 +151,10 @@ footer a:hover {
     display: flex;
     flex-direction: row;
     margin: 0;
+}
+
+.ryk{
+    margin-left: 1rem;
 }
 
 /* Styler knap */
@@ -213,14 +218,6 @@ footer a:hover {
     z-index: 2;
 }
 
-.forside-button{
-    position: absolute;
-    bottom: 140px;
-    left: 50%;
-    transform: translateX(-80%);
-    z-index: 3;
-}
-
 /* Produkter section */
 .produkter{
     display: flex;
@@ -279,7 +276,7 @@ footer a:hover {
 .forhandlere{
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-around;
 }
 
 .forhandlere img{
@@ -348,4 +345,97 @@ h2{
 .højre{
     margin-left: 800px;
     color: #38398D;
+}
+
+
+/*Media Query*/
+/*Desktop*/
+@media(max-width:1022px){
+/* Forside */
+body{
+    background-color: #EFE7D8;
+}
+.forside-foto{
+    width: 100%;
+    margin-left: -3rem;
+}
+.pilsner{
+    width: 20%;
+    margin-left: -9rem; 
+}
+.produkter img{
+    max-width: 80%;
+    margin-left: -5rem;
+    margin-bottom: -2rem;
+}
+.remove{
+    display: none;
+}
+.links{
+    display: flex;
+    flex-direction: column;
+}
+.events a {
+    width: 100%;
+    margin-bottom: 1rem;
+}
+.forhandlere{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.forhandlere img{
+    width: 35%;
+    margin-bottom: 3rem;
+}
+
+/* Event */
+.events{
+    margin-bottom: 0;
+}
+.event-img{
+    max-width: 90%;
+    margin-left: 20px;
+}
+h2{
+    margin: 0 0 10px 120px;
+}
+.event-info{
+    margin: -39rem 0rem 6rem 10rem;
+}
+.tekst{
+    max-width: 90%;
+    margin-left: 1.5rem;
+    margin-top: 4.5rem;
+}
+.bestil-plads{
+    margin: 3rem 0 0 7rem;
+}
+
+/* Information */
+.box{
+    background-color: #ffffff;
+    width: 70%;
+    margin: 50px;
+}
+
+/* Footer */
+.footer {
+    display: flex;
+    flex-direction: column;
+    margin:0 0 3rem 3rem;
+}
+.logo{
+    max-width: 20rem;
+    display: flex;
+    justify-content: space-around;
+    margin: -4rem 0 -4rem 0;
+}
+.white-line{
+    height: 3px;
+    background-color: white;
+    width: 30rem;
+    margin: 0 0 0 -4rem;
+}
+
 }
