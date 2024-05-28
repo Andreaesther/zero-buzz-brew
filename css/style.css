@@ -42,7 +42,7 @@ nav li{
 
 nav a{ 
     height: 100%;
-    padding: 0px 30px;
+    padding: 0px 40px;
     text-decoration: none;
     display: flex;
     align-items: center;
@@ -102,12 +102,12 @@ nav li:first-child{  /*får logo til at ligge til venstre*/
 /* Header */
 .hovedmenu{
     height: 7rem;
-    background-color: #F0E7D9;
+    background-color: #ffffff;
 }
 
 /* Footer */
 footer{
-    background-color: #F0E7D9;
+    background-color: #EFE7D8;
 }
 
 .footer{
@@ -171,7 +171,9 @@ footer a:hover {
     text-align: center;
     display: flex;
     align-items: center;
+    justify-content: center;
     font-size: 15px;
+    text-decoration: none;
 }
 .button:hover{
     background-color: #9F4A47;
@@ -188,7 +190,7 @@ footer a:hover {
     display: flex;
     flex-direction: column; 
     gap: 2rem;
-    padding: 2rem;
+    padding: 1rem;
 }
 
 .sortiment{
@@ -199,18 +201,9 @@ footer a:hover {
 }
 
 .forside-foto{
-    border-radius: 50%;
-    padding: 2rem;
-    width: 70%;
-    margin-right: 20px;
-    z-index: 1;
-}
-
-.pilsner{
-    width: 15%;
-    height: auto;
-    margin-left: -210px; 
-    z-index: 2;
+    padding: 1rem;
+    width: 100%;
+   
 }
 
 /* Produkter section */
@@ -218,12 +211,20 @@ footer a:hover {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin-left: 170px;
+}
+.pilsner-skrift{
+    margin: 0.3rem 0 3rem 8rem;
+}
+.lemon-skrift{
+    margin: -1.8rem 0 0 6rem;
+}
+.mango-skrift{
+    margin: -0.8rem 0 0 6.7rem;
 }
 
 .produkter img{
-    max-width: 40%;
     transition: transform 0.3s ease;
+    margin: 0 6rem;
 }
 
 .produkter img:hover {
@@ -240,12 +241,18 @@ footer a:hover {
 .links{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 
 .headline {
     margin: 40px;
     text-align: center;
+    font-size: 33px;
+}
+.headline2 {
+    margin: 80px 40px 30px 40px;
+    text-align: center;
+    font-size: 33px;
 }
 
 .events a {
@@ -287,16 +294,41 @@ footer a:hover {
 }
 .group{
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
-    margin: 3rem;
+    align-items: center;
+    margin: 3rem 1rem 1rem 1rem;
+    padding: 1rem;
+    background-color: #38398D;
+    border-radius: 8px;
+    color: #ffffff;
+    width: 60rem;
+    height: 15rem;
 }
-.oel{
-    width: 6%;
+.group img {
+    margin-right: 1rem;
+}
+.group h1 {
+    margin: 0;
+    font-size: 1.5rem;
+    margin: -10rem 0 0 3rem;
+    display: flex;
 }
 .oel-tekst{
-    width: 30%;
-    margin: 3rem;
+    width: 40%;
+    margin-left: -4.4rem;
+    display: flex;
+}
+.centrer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.rykkes{
+    margin-left: -7.2rem;
+}
+.rykkes2{
+    margin-left: -7.8rem;
 }
 
 /* Scroll section */
@@ -316,8 +348,9 @@ footer a:hover {
     align-items: center;
     justify-content: center;
     padding: 20px;
-    background-color: #EFE7D8;
+    background-color: #5981D8;
     border-radius: 30px;
+    color: #ffffff;
 }
 .slider-item img {
     width: 40px;
@@ -344,34 +377,32 @@ footer a:hover {
 
 .event-img{
     max-width: 500px;
-    margin-bottom: 15px;
-    margin-left: 200px;
+    margin: -40px 0 15px 200px;
 }
 
 h2{
-    margin: 0 0 15px 380px;
+    margin: 30px 0 5px 800px;
 }
 
 .event-info{
     background-color: #38398D;
     color: #ffffff;
     border-radius: 3%;
-    padding: 10px;
+    padding: 22px;
     list-style-type: none;
     width:fit-content;
-    margin: -5rem 0 6rem 30rem;
+    margin: -8rem 0 6rem 33rem;
     position: absolute;
 }
 
 .tekst{
     max-width: 40%;
     margin-left: 50rem;
-    margin-top: -20rem;
+    margin-top: -18rem;
 }
 
 .bestil-plads{
     margin: 3rem 0 0 80rem;
-    
 }
 
 
@@ -404,12 +435,7 @@ body{
     background-color: #EFE7D8;
 }
 .forside-foto{
-    width: 100%;
-    margin-left: -3rem;
-}
-.pilsner{
-    width: 20%;
-    margin-left: -9rem; 
+    width: 110%;
 }
 .produkter img{
     max-width: 80%;
@@ -482,7 +508,7 @@ h2{
 .white-line{
     height: 3px;
     background-color: white;
-    width: 30rem;
+    width:27rem;
     margin: 0 0 0 -4rem;
 }
 
