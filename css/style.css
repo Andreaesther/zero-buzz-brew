@@ -407,24 +407,23 @@ h2{
 
 
 /* INFORMATION */
-.box{
-    background-color: #EFE7D8;
-    border-radius: 10px;
-    padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 40%;
-    margin: 50px;
+.fordele{
+    display: flex;
+    flex-direction: row;
 }
 
-.venstre{
-    margin-left: 200px;
-    color: #963632;
+.baggrundsbillede{
+    width: 100%;
+    
 }
 
-.højre{
-    margin-left: 800px;
-    color: #38398D;
+.headline-fordele{
+    color: white;
+    margin-top: -50rem;
 }
+
+
+
 
 
 /*Media Query*/
