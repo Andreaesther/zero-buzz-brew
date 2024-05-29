@@ -203,7 +203,6 @@ footer a:hover {
 .forside-foto{
     padding: 1rem;
     width: 100%;
-   
 }
 
 /* Produkter section */
@@ -477,11 +476,13 @@ body{
 .forhandlere{
     display: flex;
     flex-wrap: wrap;
+    margin-left: 2rem;
 }
 
 .forhandlere img{
     width: 35%;
     margin-bottom: 3rem;
+    border: 2px solid #ffffff;
 }
 
 /* Event */
