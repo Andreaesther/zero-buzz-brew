@@ -410,41 +410,45 @@ h2{
     display: flex;
     flex-direction: row;
     margin: 0;
+    position: relative;
 }
 .baggrundsbillede{
     width: 100%;
     height: 28rem;
-    z-index: 0;
 }
 .headline-fordele{
     color: black;
-    margin: 1rem 0 2rem 5rem;
+    margin: 2rem 0 3rem 5rem;
 }
 .fordele p{
     color: #ffffff;
-    margin: -25rem 0 25rem 4rem;
+    margin: -25rem 0 20rem 4rem;
     width: 70%;
+}
+.tekst1, .tekst2, .tekst3{
+    position: relative;
+    width: 40%;
 }
 .tekst1{
     margin: 0rem 8rem 0 5rem;
-    width: 40%;
 }
 .tekst2{
     margin: 0 8rem 0 0;
-    width: 40%;
 }
 .tekst3{
     margin: 0 5rem 0 0;
     width: 40%;
 }
 .information-button{
-    margin: -20.5rem 0 0 8rem;
+    margin: -22.5rem 0 0 6rem;
     max-width: 6rem;
-    z-index: 3;
+    position: absolute;
+    
 }
 .information-button2{
-    margin: -15rem 0 0 8rem;
+    margin: -16rem 0 0 6rem;
     max-width: 6rem;
+    position: absolute;
 }
 
 
@@ -565,34 +569,84 @@ h2{
 }
 /* Information */
 .baggrundsbillede{
-    width: 100%;
-    height: 65rem;
+    width: 120%;
+    height: 30rem;
+    margin-left: -2rem;
 }
 .fordele{
     display: flex;
     flex-direction: column;
-    
 }
 .headline-fordele{
-    margin: -60rem 0 2rem 5rem;
+    margin: 0rem 0 2rem 4.5rem;
 }
 .tekst1{
     width: 65%;
+    margin: 0 0rem 0 5rem;
 }
 .tekst2{
-    margin: 0 0rem 0 5rem;
+    margin: -10rem 0rem 0 5rem;
     width: 65%;
 }
 .tekst3{
-    margin: 0 0 -18rem 5rem;
+    margin: 0 0 -5rem 5rem;
     width: 65%;
 }
 .information-button{
-    margin: -23rem 0 4rem 4rem;
+    margin: -19rem 0 4rem 4rem;
 }
 .information-button2{
-    margin: -23rem 0 4rem 4rem;
+    margin: -12rem 0 4rem 4rem;
+}
+#txt1{
+    margin-top: -27rem;
+    margin-left: 2rem;
 }
 }
 
+/*
+.fordele{
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    position: relative;
+}
+.baggrundsbillede{
+    width: 100%;
+    height: 28rem;
+}
+.headline-fordele{
+    color: black;
+    margin: 2rem 0 3rem 5rem;
+}
+.fordele p{
+    color: #ffffff;
+    margin: -25rem 0 20rem 4rem;
+    width: 70%;
+}
+.tekst1, .tekst2, .tekst3{
+    position: relative;
+    width: 40%;
+}
+.tekst1{
+    margin: 0rem 8rem 0 5rem;
+}
+.tekst2{
+    margin: 0 8rem 0 0;
+}
+.tekst3{
+    margin: 0 5rem 0 0;
+    width: 40%;
+}
+.information-button{
+    margin: -22.5rem 0 0 6rem;
+    max-width: 6rem;
+    position: absolute;
+    
+}
+.information-button2{
+    margin: -16rem 0 0 6rem;
+    max-width: 6rem;
+    position: absolute;
+}
 
