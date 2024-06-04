@@ -1,4 +1,4 @@
-sitemap: link til domæne
+sitemap: zbb-eksamensprojekt.andreaesther.dk
 
 User-agent: Google-Extenden
 Disallow: /
